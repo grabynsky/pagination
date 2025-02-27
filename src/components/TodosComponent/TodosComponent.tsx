@@ -23,14 +23,11 @@ const TodosComponent: FC<TodosProps> = () => {
                 .getAll(+page)
                 .then(value => {
                         setTodos(value.todos);
-                        const lastId = value.todos[value.todos.length - 1].id;
-                        lastId >= value.total ? setFlag(true) : setFlag(false);
                     }
                 );
-
         }
-
     }, [query]);
+
     return (
         <div>
             {

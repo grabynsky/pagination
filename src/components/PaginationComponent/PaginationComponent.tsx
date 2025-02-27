@@ -10,7 +10,7 @@ const PaginationComponent: FC<PaginationProps> = ({flag}) => {
 
     const onClickPrevHandler = () => {
         const page = query.get('page');
-        if (page && +page > 0) {
+        if (page && +page >0 ) {
             let currentPage = +page;
             currentPage--;
             setQuery({page: currentPage.toString()});

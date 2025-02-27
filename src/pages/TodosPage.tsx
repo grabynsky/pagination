@@ -23,7 +23,6 @@ const TodosPage = () => {
                         lastId >= value.total ? setFlag(true) : setFlag(false);
                     }
                 );
-
         }
 
     }, [query]);
